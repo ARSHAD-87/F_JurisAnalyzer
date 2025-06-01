@@ -15,10 +15,9 @@ const LandingPage = () => {
     // Set isAuthenticated to true if either token exists
     setIsAuthenticated(!!persistentToken || !!temporaryToken);
   }, []);
-  // Function to handle menu toggle
+
   const toggleMenu = () => setMenuOpen(!menuOpen);
-  // Function to handle navigation to the upload page
-  // This function checks if the user is authenticated before navigating
+
   const goToUploadPage = () => {
     if (!isAuthenticated) {
       alert("You must be signed in to continue.");

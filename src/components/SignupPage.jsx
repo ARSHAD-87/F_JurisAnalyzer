@@ -2,8 +2,6 @@ import React, { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import './auth.css';
 
-// This component handles the signup functionality
-// It allows users to create a new account using their name, email, and password
 const SignupPage = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -13,15 +11,14 @@ const SignupPage = () => {
   });
   const [rememberMe, setRememberMe] = useState(false);
   const navigate = useNavigate();
-  // Function to handle input changes
-  // It updates the state with the current value of the input fields
+
   const handleChange = (e) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value
     });
   };
-  // Function to handle signup
+
   const handleSignup = async (e) => {
     e.preventDefault();
     if (formData.password !== formData.confirmPassword) {
@@ -29,7 +26,7 @@ const SignupPage = () => {
       return;
     }
 
-    const response = await fetch(`${process.env.REACT_APP_API_URL}/api/signup/`, {
+    const response = await fetch('/api/signup/', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -51,6 +48,7 @@ const SignupPage = () => {
       } else {
         sessionStorage.setItem('userToken', result.token || 'true'); // Temporary storage
       }
+
       navigate('/');
     } else {
       alert(result.error);
@@ -107,7 +105,7 @@ const SignupPage = () => {
         <button type="reset">Clear</button>
       </form>
       <p>
-        Already have an account? <Link to="/login" style={{ textDecoration: 'none', fontWeight: 'bold', color: 'black' }}>Sign In</Link>
+        Already have an account? <Link to="/login" style={{textDecoration:'none',fontWeight:'bold',color:'black'}}>Sign In</Link>
       </p>
     </div>
   );

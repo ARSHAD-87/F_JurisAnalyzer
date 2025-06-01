@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './AnalysisPage.css';
-// This component displays the analysis result
-// It retrieves the analysis result from sessionStorage and displays it
+
 const AnalysisPage = () => {
   const [analysisResult, setAnalysisResult] = useState({
     summary: [],
