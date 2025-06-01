@@ -61,7 +61,7 @@ const UploadPage = () => {
     formData.append('file', selectedFile);
 
     try {
-      const response = await fetch('/api/upload/', {
+      const response = await fetch(`${process.env.REACT_APP_API_URL}/api/upload/`, {
         method: 'POST',
         body: formData,
       });
