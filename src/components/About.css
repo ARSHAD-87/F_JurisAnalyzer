@@ -1,0 +1,36 @@
+.about-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .intro {
+    font-size: 16px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .team-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .team-box {
+    background-color: #f9f9f9;
+    border-left: 6px solid #007b5e;
+    box-shadow: 0 4px 8px rgba(0, 123, 94, 0.2);
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  .team-box h2 {
+    margin-bottom: 10px;
+    color: #007b5e;
+  }
+  
+  .team-box ul {
+    padding-left: 20px;
+  }
+  

@@ -1,0 +1,87 @@
+#result {
+  margin: auto;
+  height: 600px;
+  width: 70%;
+  border: 0px solid;
+  border-radius: 25px;
+  border-color: aliceblue;
+  background-color: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  overflow-y: auto; /* Enable vertical scrolling */
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Add space between the boxes */
+  align-items: stretch; /* Ensure both boxes stretch to the same height */
+}
+  .analysis-heading {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    color: #2c3e50;
+    animation: fadeInDown 1s ease;
+    margin-top: 30px;;
+    margin-bottom: 70px;
+    
+  }
+  
+  
+  #summary_text,
+  #risk_text {
+    flex: 0 1 40%; /* Each box takes up 40% of the width and shrinks if needed */
+    height: 100%; /* Make the boxes stretch to the height of the #result container */
+    border: 0px solid;
+    border-radius: 25px;
+    background-color: white;
+    border-color: aliceblue;
+    box-shadow: 0 4px 20px rgba(40, 167, 69, 0.3); /* Bootstrap green for summary */
+    padding: 40px;
+    overflow-y: auto;
+  }
+  
+  #summary_text {
+    box-shadow: 0 4px 20px rgba(40, 167, 69, 0.3); /* Green shadow */
+  }
+  
+  #risk_text {
+    box-shadow: 0 4px 20px rgba(220, 53, 69, 0.3); /* Red shadow */
+  }
+  
+  #summary_text h3 {
+    color: #28a745;
+  }
+  
+  #risk_text h3 {
+    color: #dc3545;
+  }
+
+#download{
+  a{
+    text-align: center;
+    text-decoration: none;
+    border-radius:10px;
+    font-weight: bold;
+    padding:10px;
+    color:white;
+    border: 0px solid;
+    border-radius: 25px;
+    border-color:aliceblue;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);    
+    background-color: rgb(0, 0, 171);
+    display: block;
+    margin: auto;
+    width:200px;
+  }
+}
+#download:hover{
+  a{
+    text-align:center;
+  text-decoration: none;
+  background-color:rgb(0, 0, 255);
+  color:white;
+  font-weight:bolder;
+  padding:10px;
+  box-shadow:above;
+  display: block;
+  margin: auto;
+  width:205px;
+  }
+}

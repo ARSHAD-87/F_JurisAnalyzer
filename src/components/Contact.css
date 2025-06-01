@@ -1,0 +1,37 @@
+.contact-container {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .email-box {
+    background-color: #f0f0f0;
+    border-left: 6px solid #28a745;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 128, 0, 0.2);
+    margin-top: 20px;
+  }
+  
+  .email-box p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .send-button {
+    background: linear-gradient(to right, #007bff, #28a745);
+    border: none;
+    color: white;
+    padding: 12px 25px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  .send-button:hover {
+    opacity: 0.9;
+  }
+  
